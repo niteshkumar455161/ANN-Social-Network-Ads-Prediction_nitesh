@@ -5,7 +5,7 @@ import tensorflow as tf
 
 @st.cache_resource
 def load_assets():
-    model = tf.keras.models.load_model("social_ads_model.h5", compile=False)
+    model = tf.keras.models.load_model("social_ads_model.keras", compile=False)
     scaler = joblib.load("scaler.pkl")
     return model, scaler
 
